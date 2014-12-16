@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
+.cbp-bislideshow img {
+	height: 100% !important;
+	opacity: .5 !important;
+}
+
+.social-hashtag {
+  	color: #fff;
+}
+
+.welcome-message-top {
+	top:0px;
+	margin-top: 20%;
+	margin-bottom:15%;
+}
+
+.welcome-message-bottom {
+	bottom:0px;
+	margin-bottom: 15%;
+}
+
+@media (max-width: 767px) {
+	.linn-wedding {
+		font: 400 28px 'Great Vibes', Helvetica, sans-serif !important;
+  		color: #fff;
+  		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+
+	.welcome-message p {
+		font: 400 65px 'Great Vibes', Helvetica, sans-serif !important;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 978px){
+	.linn-wedding {
+		font: 400 40px 'Great Vibes', Helvetica, sans-serif !important;
+  		color: #fff;
+  		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+
+	.welcome-message p {
+		font: 400 80px 'Great Vibes', Helvetica, sans-serif !important;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (min-width: 979px) {
+	.linn-wedding {
+		font: 400 50px 'Great Vibes', Helvetica, sans-serif !important;
+  		color: #fff;
+  		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+
+	.welcome-message p {
+		font: 400 100px 'Great Vibes', Helvetica, sans-serif !important;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+/************* Mobile Overrides ***************/
+@media only screen and (max-device-width: 480px) {
+	.linn-wedding {
+		font: 400 25px 'Great Vibes', Helvetica, sans-serif !important;
+  		color: #fff;
+  		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+}
+
+/*@media (max-width: 882px) {
+	.linn-wedding {
+		font: 400 40px 'Great Vibes', Helvetica, sans-serif;
+  		color: #fff;
+  		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+}*/
+
+/*@media (min-width: 883px) {
+	.linn-wedding {
+	  font: 400 50px 'Great Vibes', Helvetica, sans-serif;
+	  color: #fff;
+	  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+}*/
+
+
+
