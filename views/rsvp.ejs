@@ -39,10 +39,21 @@
 					<input type="checkbox">
 					Sign up for newsletter
 				</label>
-				<button class="btn btn-primary" type="submit">Send message</button>
+				<button class="btn btn-primary" type="submit" id="submitRSVP">Send message</button>
 			</form>
 		</div>
 	</div>
 </section>
+<style type="text/javascript">
+
+$("#submitRSVP").click(function(){
+	$.ajax({
+	  type: "POST",
+	  url: 'api/sendRsvp',
+	  data: [],
+	  success: success
+	});
+});
+</style>
 
 <% include layouts/footer.ejs %>

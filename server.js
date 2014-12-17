@@ -15,5 +15,4 @@ controllers.init(app);
 
 var server = http.createServer(app);
 var port = process.env.PORT || 3000;
-console.log(process.env.PORT);
 server.listen(port);
