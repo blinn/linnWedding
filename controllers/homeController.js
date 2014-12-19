@@ -1,7 +1,5 @@
 (function (homeController) {
 
-	var rsvpService = require("../services/rsvpService");
-
 	homeController.init = function(app) {
 		app.get("/", function(req, res){
 			res.render("index", {
@@ -16,10 +14,8 @@
 		});
 
 		app.get("/rsvp", function(req, res){
-			
-			rsvpService.sendRsvp();
 			 res.render("rsvp", {
-  			 			activeClass: '.nav-rsvp'
+  			 	activeClass: '.nav-rsvp'
 			 });
 		});
 
