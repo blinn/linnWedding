@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 
+.backstretch {
+	opacity: .75;
+}
+
 .cbp-bislideshow img {
 	height: 100% !important;
 	opacity: .5 !important;
@@ -18,6 +22,14 @@
 .welcome-message-bottom {
 	bottom:0px;
 	margin-bottom: 15%;
+}
+
+.event-block-space {
+	padding-left:1px;
+}
+
+a.thumbnail-registry:hover {
+	border:1px solid #450000;
 }
 
 @media (max-width: 767px) {

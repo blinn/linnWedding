@@ -1,11 +1,7 @@
 (function() {
 
-
-	// ------------------------------------
-	// Background Slideshow
-	// ------------------------------------
-    $(function() {
-        cbpBGSlideshow.init();
-    });
+	$(".social .btn").click(function(e){
+		e.preventDefault();
+	});
 
 })();

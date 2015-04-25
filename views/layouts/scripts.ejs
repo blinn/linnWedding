@@ -1,21 +1,24 @@
 <script src="js/libs/jquery.min.js"></script>
 <script src="js/libs/jquery.ui.map.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/libs/jquery.fancybox.min.js"></script>
+<!-- <script src="js/libs/jquery.fancybox.min.js"></script>
 <script src="js/libs/jquery.hoverdir.min.js"></script>
 <script src="js/libs/jquery.isotope.min.js"></script>
 <script src="js/libs/jquery.masonry.min.js"></script>
 <script src="js/libs/jquery.fitvids.min.js"></script>
 <script src="js/libs/jquery.flexslider.min.js"></script>
-<script src="js/libs/jquery.imagesloaded.min.js"></script>
-<script src="js/libs/cbpBGSlideshow.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/libs/jquery.imagesloaded.min.js"></script> -->
+<script src="js/libs/backstretch.js"></script>
 
 
 <script type="text/javascript">
 //Active Class Code
 var activeClass = '<%= activeClass %>';
+var backgroundImg = '<%=backgroundImg %>';
+
 $(activeClass).addClass("active");
+
+$.backstretch(backgroundImg);
 
 
 

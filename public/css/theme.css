@@ -219,7 +219,6 @@ a {
 a:hover,
 a:focus {
   color: #450000;
-  text-decoration: underline;
 }
 .img-rounded {
   -webkit-border-radius: 6px;
@@ -6338,9 +6337,24 @@ input[type="submit"].btn.btn-mini {
   margin-left: 0;
 }
 .thumbnails > li {
-  float: left;
-  margin-bottom: 1.5em;
-  margin-left: 20px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+.thumbnail-registry {
+  display: block;
+  padding: 4px;
+  line-height: 1.5em;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .thumbnail {
   display: block;
@@ -8437,6 +8451,7 @@ a.badge:focus {
   .thumbnails > li {
     float: none;
     margin-left: 0;
+    ©margin-bottom: 20px;
   }
   [class*="span"],
   .uneditable-input[class*="span"],
@@ -10010,6 +10025,10 @@ figure.hover-figcaption a:hover .figcaption {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+.box-shadow-max {
+  height: 350px;
+  background: #eeeeee;
+}
 .ribbon,
 .ribbon-top {
   position: absolute;
@@ -10106,6 +10125,7 @@ article img {
 }
 .map-background {
   position: absolute;
+  margin-left: 0px !important;
   top: 0;
   left: 0;
   width: 100%;
