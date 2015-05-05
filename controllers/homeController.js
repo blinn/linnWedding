@@ -4,14 +4,14 @@
 		app.get("/", function(req, res){
 			res.render("index", {
   				activeClass: '.nav-home',
-  				backgroundImg: 'images/temp-background.png'
+  				backgroundImg: 'images/7.jpg'
 			});
 		});
 
 		app.get("/events", function(req, res){
 			res.render("events", {
   				activeClass: '.nav-events',
-  				backgroundImg: 'images/temp-background2.png'
+  				backgroundImg: 'images/20at75.jpg'
 			});
 		});
 
@@ -25,7 +25,7 @@
 		app.get("/proposal", function(req, res){
 			res.render("proposal", {
   				activeClass: '.nav-proposal',
-  				backgroundImg: 'images/temp-background.png'
+  				backgroundImg: 'images/20at75.jpg'
 			});
 		});
 

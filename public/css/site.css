@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 
 .backstretch {
-	opacity: .75;
+	opacity: .85;
 }
 
 .cbp-bislideshow img {
@@ -13,15 +13,12 @@
   	color: #fff;
 }
 
-.welcome-message-top {
+.welcome-message {
 	top:0px;
-	margin-top: 20%;
-	margin-bottom:15%;
-}
-
-.welcome-message-bottom {
-	bottom:0px;
-	margin-bottom: 15%;
+	right: 0px;
+	position: absolute;
+	margin-top: 2%;
+	text-shadow: 2px 2px 2px white;
 }
 
 .event-block-space {
@@ -39,10 +36,18 @@ a.thumbnail-registry:hover {
   		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 	}
 
-	.welcome-message p {
-		font: 400 65px 'Great Vibes', Helvetica, sans-serif !important;
-		width: 100%;
+	.welcome-message p{
+		margin-top:15%;
 		text-align: center;
+		font: 400 70px 'Great Vibes', Helvetica, sans-serif !important;
+		width: 100%;
+	}
+
+	.welcome-message p.phone-drop-bottom {
+		position:fixed;
+		text-align: center;
+		bottom:0px;
+
 	}
 }
 
@@ -81,6 +86,17 @@ a.thumbnail-registry:hover {
 		font: 400 25px 'Great Vibes', Helvetica, sans-serif !important;
   		color: #fff;
   		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+	}
+	
+	.welcome-message p{
+		margin-top:15%;
+		font: 400 50px 'Great Vibes', Helvetica, sans-serif !important;
+	}
+
+	.welcome-message p.phone-drop-bottom {
+		position:fixed;
+		bottom:0px;
+
 	}
 }
 
