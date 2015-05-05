@@ -11,7 +11,7 @@
 		app.get("/events", function(req, res){
 			res.render("events", {
   				activeClass: '.nav-events',
-  				backgroundImg: 'images/20at75.jpg'
+  				backgroundImg: 'images/20.jpg'
 			});
 		});
 
@@ -25,7 +25,7 @@
 		app.get("/proposal", function(req, res){
 			res.render("proposal", {
   				activeClass: '.nav-proposal',
-  				backgroundImg: 'images/20at75.jpg'
+  				backgroundImg: 'images/20-1.jpg'
 			});
 		});
 

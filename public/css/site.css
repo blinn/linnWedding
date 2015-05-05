@@ -1,18 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 
+
+/******** Shared ********/
 .backstretch {
 	opacity: .85;
-}
-
-.cbp-bislideshow img {
-	height: 100% !important;
-	opacity: .5 !important;
 }
 
 .social-hashtag {
   	color: #fff;
 }
 
+h1.section-title {
+	margin-top: 2%;
+	text-shadow: 2px 2px 2px white;
+}
+
+
+/******** Home ********/
 .welcome-message {
 	top:0px;
 	right: 0px;
@@ -21,6 +25,9 @@
 	text-shadow: 2px 2px 2px white;
 }
 
+
+
+/******** Events ********/
 .event-block-space {
 	padding-left:1px;
 }
@@ -29,6 +36,16 @@ a.thumbnail-registry:hover {
 	border:1px solid #450000;
 }
 
+.map-mobile {
+	border:2px solid #450000;
+	margin-bottom: 3%;
+	max-width: 400px;
+}
+
+
+
+
+
 @media (max-width: 767px) {
 	.linn-wedding {
 		font: 400 28px 'Great Vibes', Helvetica, sans-serif !important;
@@ -36,8 +53,15 @@ a.thumbnail-registry:hover {
   		text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 	}
 
+	.welcome-message {
+		top:0px;
+		right: 0px;
+		position: relative;
+		margin-top: 0%;
+		text-shadow: 2px 2px 2px white;
+	}
+
 	.welcome-message p{
-		margin-top:15%;
 		text-align: center;
 		font: 400 70px 'Great Vibes', Helvetica, sans-serif !important;
 		width: 100%;
@@ -89,7 +113,7 @@ a.thumbnail-registry:hover {
 	}
 	
 	.welcome-message p{
-		margin-top:15%;
+		position:relative;
 		font: 400 50px 'Great Vibes', Helvetica, sans-serif !important;
 	}
 

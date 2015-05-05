@@ -10108,6 +10108,7 @@ article img {
 }
 .section-map-background {
   min-height: 18em;
+  margin-bottom: 5%;
 }
 .section-map-background .box-content {
   background-color: #fffbf1;
