@@ -8,10 +8,31 @@
 			});
 		});
 
+		app.get("/story", function(req, res){
+			res.render("story", {
+  				activeClass: '.nav-story',
+  				backgroundImg: ''
+			});
+		});
+
 		app.get("/events", function(req, res){
 			res.render("events", {
   				activeClass: '.nav-events',
   				backgroundImg: 'images/20.jpg'
+			});
+		});
+
+		app.get("/accomodations", function(req, res){
+			res.render("accomodations", {
+  				activeClass: '.nav-accomodations',
+  				backgroundImg: ''
+			});
+		});
+
+		app.get("/gallery", function(req, res){
+			res.render("gallery", {
+  				activeClass: '.nav-gallery',
+  				backgroundImg: ''
 			});
 		});
 
@@ -22,12 +43,41 @@
 			 });
 		});
 
-		app.get("/proposal", function(req, res){
-			res.render("proposal", {
-  				activeClass: '.nav-proposal',
-  				backgroundImg: 'images/20-1.jpg'
-			});
+
+		//Story flip cards
+		app.get("/story/1", function(req, res){
+			 res.render("story-1", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
 		});
+
+		app.get("/story/2", function(req, res){
+			 res.render("story-2", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
+		});
+
+		app.get("/story/3", function(req, res){
+			 res.render("story-3", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
+		});
+
+		app.get("/story/4", function(req, res){
+			 res.render("story-4", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
+		});
+
+
+
+		
+
+		
 
 	};
 })(module.exports);
