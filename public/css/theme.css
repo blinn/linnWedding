@@ -9575,7 +9575,7 @@ header aside p {
   color: #555555;
 }
 header aside p a {
-  color: #21786c;
+  color: gray;
 }
 header aside p a:hover,
 header aside p a:focus {
