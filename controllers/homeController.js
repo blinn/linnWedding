@@ -25,7 +25,7 @@
 		app.get("/accomodations", function(req, res){
 			res.render("accomodations", {
   				activeClass: '.nav-accomodations',
-  				backgroundImg: ''
+  				backgroundImg: 'images/gallery/K.jpg'
 			});
 		});
 
@@ -39,7 +39,7 @@
 		app.get("/rsvp", function(req, res){
 			 res.render("rsvp", {
   			 	activeClass: '.nav-rsvp',
-  				backgroundImg: 'images/temp-background3.png'
+  				backgroundImg: 'images/gallery/H2.jpg'
 			 });
 		});
 

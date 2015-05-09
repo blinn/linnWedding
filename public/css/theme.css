@@ -10025,8 +10025,15 @@ figure.hover-figcaption a:hover .figcaption {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+.addTop {
+  border-top:3px solid #450000;
+}
 .box-shadow-max {
   height: 350px;
+  background: #eeeeee;
+}
+.box-shadow-auto {
+  height: auto;
   background: #eeeeee;
 }
 .ribbon,
