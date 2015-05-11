@@ -6,17 +6,24 @@
 		
 		app.post("/sendRsvp", function(req, res){
 			var rsvpObj = {
+				attendingStatus: req.body.attendingStatus,
 				guestList: req.body.guestList,
+				guestNum: req.body.guestNum,
 				email: req.body.email,
-				message: req.body.message,
-				numberCount: req.body.numberCount
+				message: req.body.message
 			};
 
 			rsvpService.sendRsvp(rsvpObj, function(err){
 				if(err) {
-					res.sendStatus(400, err);
+					res.render("error", {
+		  				activeClass: '',
+		  				backgroundImg: ''
+					});
 				} else {
-					res.sendStatus(200);
+					res.render("thankyou", {
+		  				activeClass: '',
+		  				backgroundImg: ''
+					});
 				}
 			});
 		});

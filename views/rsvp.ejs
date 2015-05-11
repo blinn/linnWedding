@@ -22,11 +22,21 @@
 		<div class="span4">
 			<h5>Submit Online</h5>
 			<form action="/sendRsvp" method="post" class="form-vertical" id="mail-form">
-				<div class="control-group">
-					<label for="guestList"></label>
-					<input class="span3" name="guestList" placeholder="Jane & John Doe" type="text">
+				<div id="contol-group">
+					<select id="response-selector" name="attendingStatus">
+						<option value="Yes">Yes, we will be attending</option>
+						<option value="No">We are unable to attending</option>
+					</select>
 				</div>
 				<div class="control-group">
+					<label for="guestList"></label>
+					<input required class="span3" name="guestList" placeholder="Jane & John Doe" type="text">
+				</div>
+				<div class="control-group form-guestnum-container">
+					<label for="guestNum">Number of Adults Attending</label>
+					<input class="span3" name="guestNum" placeholder="0" type="number" min="0">
+				</div>
+				<div class="control-group form-email-container">
 					<label for="email"></label>
 					<input class="span3" name="email" placeholder="Email" type="email">
 				</div>
@@ -37,16 +47,6 @@
 		</div>
 	</div>
 </section>
-<style type="text/javascript">
 
-$("#submitRSVP").click(function(){
-	$.ajax({
-	  type: "POST",
-	  url: 'api/sendRsvp',
-	  data: [],
-	  success: success
-	});
-});
-</style>
 
-<% include layouts/footer.ejs %>
+<% include layouts/rsvp-footer.ejs %>

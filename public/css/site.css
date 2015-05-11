@@ -26,6 +26,14 @@ h1.section-title {
 }
 
 
+/******** RSVP ********/
+#mail-form input[type="text"], #mail-form input[type="number"] {
+	height:34px;
+}
+
+#response-selector {
+	width:256px;
+}
 
 /******** Events ********/
 .event-block-space {

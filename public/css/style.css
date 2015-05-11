@@ -153,16 +153,16 @@ Main content
   vertical-align: middle;
 }
 .cd-item:nth-of-type(1) {
-  background-color: #CBB370;
-}
-.cd-item:nth-of-type(2) {
   background-color: #828282;
 }
+.cd-item:nth-of-type(2) {
+  background-color: #CBB370;
+}
 .cd-item:nth-of-type(3) {
-  background-color: #dadcdc;
+  background-color: #450000;
 }
 .cd-item:nth-of-type(4) {
-  background-color: #450000;
+  background-color: #dadcdc;
 }
 .cd-item h2 {
   font-size: 2.2rem;

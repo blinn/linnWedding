@@ -43,7 +43,6 @@
 			 });
 		});
 
-
 		//Story flip cards
 		app.get("/story/1", function(req, res){
 			 res.render("story-1", {
@@ -68,6 +67,20 @@
 
 		app.get("/story/4", function(req, res){
 			 res.render("story-4", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
+		});
+
+		app.get("/error", function(req, res){
+			 res.render("error", {
+  			 	activeClass: '',
+  				backgroundImg: ''
+			 });
+		});
+
+		app.get("/thankyou", function(req, res){
+			 res.render("thank you", {
   			 	activeClass: '',
   				backgroundImg: ''
 			 });

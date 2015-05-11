@@ -16,9 +16,28 @@
 		 	from: "linnwedding15@gmail.com", // sender address
 		 	to: "br3ttlinn@gmail.com", // list of receivers
 		 	subject: "Someone has RSVP'd", // Subject line
-		 	html: rsvpObj.guestList + " has responded! <br/>"+
-		 	"<b>Respond to them at " + rsvpObj.email +"</b><br/> They also left a note: " + rsvpObj.message // html body
+		 	html: createBody()
 		 };
+
+		 function createBody(){
+		 	var bodyString = rsvpObj.guestList + " has responded with the following status: <br/>";
+		 	
+		 	if(rsvpObj.attendingStatus === "Yes"){ 
+		 		bodyString = bodyString + "<b>Yes we will be in attendance</b> and have rsvp'd for "+ rsvpObj.guestNum + " attendees.<br/>";
+		 		bodyString = bodyString + "<b>Respond to them at " + rsvpObj.email +"</b><br/> ";
+		 		if(rsvpObj.message != "") {
+		 			bodyString = bodyString + "<br/>They have included the following message with their reponse: <br/>" + rsvpObj.message;
+		 		}
+		 	} else {
+		 		bodyString = bodyString + "<b>No we will not be able to make it</b><br/>";
+		 		if(rsvpObj.message != "") {
+		 			bodyString = bodyString + "<br/>They have included the following message with their reponse: <br/>" + rsvpObj.message;
+		 		}
+
+		 	}
+
+		 	return bodyString;
+		 }
 
 		 //send mail with defined transport object
 		 smtpTransport.sendMail(mailOptions, function(error, response){
