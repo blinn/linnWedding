@@ -50,9 +50,41 @@ a.thumbnail-registry:hover {
 	max-width: 400px;
 }
 
+/******** story ********/
+.bride-side h3 {
+	color:#450000;
+}
 
+.bride-side .span3, 
+.groom-side .span3 {
+	margin-top:20px;
+}
 
+.bride-side div.row {
+	margin-bottom:5%;
+}
 
+.bride-side div.row img, 
+.groom-side div.row img {
+	height:140px;
+	width:140px;
+}
+
+.bride-side div.row .title{
+	color:#450000;
+}
+
+.groom-side h3 {
+	color:#CBB370;
+}
+
+.groom-side div.row {
+	margin-bottom:5%;
+}
+
+.groom-side div.row .title{
+	color:#CBB370;
+}
 
 @media (max-width: 767px) {
 	.linn-wedding {
