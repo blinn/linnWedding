@@ -14,7 +14,7 @@
 
 		 var mailOptions = {
 		 	from: "linnwedding15@gmail.com", // sender address
-		 	to: "br3ttlinn@gmail.com", // list of receivers
+		 	to: "br3ttlinn@gmail.com, caseynesius@gmail.com", // list of receivers
 		 	subject: "Someone has RSVP'd", // Subject line
 		 	html: createBody()
 		 };
